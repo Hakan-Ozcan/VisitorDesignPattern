@@ -1,4 +1,7 @@
 ﻿using VisitorDesignPattern;
+using VisitorDesignPattern.Abstract;
+using VisitorDesignPattern.Entities;
+using VisitorDesignPattern.Visitors;
 
 class Program
 {

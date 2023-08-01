@@ -3,16 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using VisitorDesignPattern.Abstract;
 
-namespace VisitorDesignPattern
+namespace VisitorDesignPattern.Entities
 {
-    public class Square : Shape
+    public class Circle : Shape
     {
-        public double SideLength { get; set; }
+        public double Radius { get; set; }
 
         public override void Accept(ShapeVisitor visitor)
         {
-            visitor.VisitSquare(this);
+            visitor.VisitCircle(this);
         }
     }
 }

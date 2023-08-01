@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using VisitorDesignPattern.Abstract;
+using VisitorDesignPattern.Entities;
 
-namespace VisitorDesignPattern
+namespace VisitorDesignPattern.Visitors
 {
     public class AreaVisitor : ShapeVisitor
     {
