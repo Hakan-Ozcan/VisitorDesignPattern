@@ -1,0 +1,16 @@
+﻿Visitor tasarım deseni, GoF (Gang of Four) tarafından tanımlanan bir tasarım deseni olup davranışsal desenler kategorisine girer
+. Bu desen, nesnelerin yapısını değiştirmeden yeni işlemler eklemeyi sağlar. 
+Ayrıca, açık uçlu yapıları destekler ve sık kullanılan veri yapısının birbirinden bağımsız işlemlerinin tanımlanmasına yardımcı olur.
+
+Visitor deseninde, bir nesnenin üzerinde yapılacak işlemler farklı bir sınıf (Visitor) tarafından temsil edilir. 
+Bu sayede, nesne yapısı değişmeden yeni işlemler eklemek mümkün hale gelir.
+
+Örneğin, elimizde bir şekil (Shape) sınıfı olduğunu ve farklı şekil tipleri olan daire (Circle) ve kare (Square) sınıflarını düşünelim.
+Şimdi, bu şekiller üzerinde farklı işlemler yapmak isteyelim, mesela alanlarını hesaplamak için ayrı bir sınıf oluşturmak istiyoruz.
+İşte Visitor deseni, bu tür durumlarda kullanılabilir.
+Bu örnekte, Shape sınıfı tüm şekillerin temel sınıfını temsil eder ve Circle ve Square sınıfları bu temel sınıftan türetilir.
+ShapeVisitor sınıfı, şekiller üzerinde işlem yapacak olan ziyaretçi sınıfını temsil eder ve AreaVisitor bu ziyaretçi sınıfın bir örneğidir.
+AreaVisitor, her bir şeklin alanını hesaplar ve sonucu ekrana yazdırır.
+
+Bu sayede, yeni bir işlem eklemek istediğinizde, sadece yeni bir ziyaretçi sınıfı oluşturmanız ve gerekli işlemleri tanımlamanız yeterli olacaktır.
+Böylece Shape sınıfını veya onun türetilen sınıflarını değiştirmeden yeni işlevselliği ekleyebilirsiniz.
